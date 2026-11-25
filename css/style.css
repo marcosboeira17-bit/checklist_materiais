@@ -1,0 +1,389 @@
+
+/* ==============================
+   CONFIGURAÇÕES GERAIS
+============================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+:root {
+    --azul: #112244;
+    --verde: #198754;
+    --vermelho: #dc3545;
+    --fundo: #f1f5f9;
+    --branco: #ffffff;
+    --cinza: #64748b;
+}
+
+body {
+    background-color: var(--fundo);
+    color: var(--azul);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* ==============================
+   CABEÇALHO
+============================== */
+
+header {
+    background-color: var(--azul);
+    color: white;
+    padding: 28px 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 32px;
+    letter-spacing: 1px;
+    margin-bottom: 6px;
+}
+
+header p {
+    color: #cbd5e1;
+    font-size: 14px;
+}
+
+/* ==============================
+   CONTEÚDO
+============================== */
+
+.container {
+    width: 92%;
+    max-width: 850px;
+    margin: 30px auto;
+    flex: 1;
+}
+
+.login {
+    max-width: 420px;
+}
+
+.card {
+    background-color: var(--branco);
+    padding: 25px;
+    border-radius: 14px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
+}
+
+h2 {
+    font-size: 22px;
+    margin-bottom: 12px;
+}
+
+h3 {
+    font-size: 18px;
+    margin: 25px 0 12px;
+}
+
+.subtitulo {
+    color: var(--cinza);
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.data {
+    background-color: #e8eef7;
+    padding: 12px;
+    border-radius: 8px;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+/* ==============================
+   FORMULÁRIOS
+============================== */
+
+label {
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+input {
+    width: 100%;
+    padding: 13px;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    font-size: 16px;
+    margin-bottom: 18px;
+    outline: none;
+    background-color: white;
+}
+
+input:focus {
+    border-color: var(--azul);
+    box-shadow: 0 0 0 3px rgba(17, 34, 68, 0.08);
+}
+
+/* ==============================
+   BOTÕES
+============================== */
+
+.btn {
+    display: inline-block;
+    width: 100%;
+    padding: 13px 18px;
+    border: none;
+    border-radius: 8px;
+    background-color: var(--azul);
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.btn:hover {
+    filter: brightness(1.15);
+}
+
+.btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.verde {
+    background-color: var(--verde);
+}
+
+.vermelho {
+    background-color: var(--vermelho);
+}
+
+.link {
+    display: block;
+    text-align: center;
+    color: var(--azul);
+    font-size: 14px;
+    text-decoration: none;
+    margin-top: 20px;
+}
+
+.link:hover {
+    text-decoration: underline;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+nav .btn {
+    width: auto;
+}
+
+/* ==============================
+   LISTA DE MATERIAIS
+============================== */
+
+.material {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    padding: 16px 0;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.material:last-child {
+    border-bottom: none;
+}
+
+.material strong {
+    display: block;
+    font-size: 15px;
+    margin-bottom: 5px;
+    overflow-wrap: anywhere;
+}
+
+.material small {
+    color: var(--cinza);
+    font-size: 13px;
+}
+
+.material input {
+    width: 90px;
+    margin: 0;
+    text-align: center;
+    flex-shrink: 0;
+}
+
+.material .btn {
+    width: auto;
+    font-size: 12px;
+    padding: 10px;
+}
+
+#listaConferencia {
+    margin-bottom: 25px;
+}
+
+/* ==============================
+   HISTÓRICO
+============================== */
+
+.resumo {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.indicador {
+    background-color: white;
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.indicador p {
+    color: var(--cinza);
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.indicador strong {
+    font-size: 32px;
+}
+
+#totalPendencias {
+    color: var(--vermelho);
+}
+
+.registro {
+    border: 1px solid #e2e8f0;
+    border-radius: 10px;
+    padding: 16px;
+    margin-top: 15px;
+}
+
+.registro h3 {
+    margin: 0 0 8px;
+}
+
+.registro p {
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+.registro details {
+    margin-top: 12px;
+}
+
+.registro summary {
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 10px 0;
+}
+
+.status-ok {
+    color: var(--verde);
+    font-weight: bold;
+}
+
+.status-falta {
+    color: var(--vermelho);
+    font-weight: bold;
+}
+
+/* ==============================
+   MENSAGENS
+============================== */
+
+.mensagem {
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 1.5;
+}
+
+.mensagem:not(:empty) {
+    padding: 14px;
+    margin-top: 15px;
+    border-radius: 8px;
+}
+
+.sucesso {
+    color: #166534;
+    background-color: #dcfce7;
+}
+
+.erro {
+    color: #991b1b;
+    background-color: #fee2e2;
+}
+
+/* ==============================
+   RODAPÉ
+============================== */
+
+footer {
+    background-color: var(--azul);
+    color: #cbd5e1;
+    text-align: center;
+    padding: 20px;
+    font-size: 13px;
+}
+
+/* ==============================
+   RESPONSIVIDADE
+============================== */
+
+@media (max-width: 600px) {
+
+    header {
+        padding: 22px 15px;
+    }
+
+    header h1 {
+        font-size: 27px;
+    }
+
+    .container {
+        margin: 18px auto;
+        width: 94%;
+    }
+
+    .card {
+        padding: 18px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    .material {
+        gap: 10px;
+    }
+
+    .material input {
+        width: 75px;
+    }
+
+    .material strong {
+        font-size: 14px;
+    }
+
+    .indicador {
+        padding: 15px 8px;
+    }
+
+    .indicador p {
+        font-size: 12px;
+    }
+}

@@ -1,0 +1,56 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CheckFiber | Histórico</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+</head>
+<body data-restrito="true">
+
+    <header>
+        <h1>CheckFiber</h1>
+        <p>Histórico de conferências</p>
+    </header>
+
+    <main class="container">
+
+        <nav>
+            <a href="operador.html" class="btn">Voltar</a>
+            <button class="btn vermelho" onclick="sair()">Sair</button>
+        </nav>
+
+        <section class="resumo">
+
+            <div class="indicador">
+                <p>Conferências</p>
+                <strong id="totalConferencias">0</strong>
+            </div>
+
+            <div class="indicador">
+                <p>Com pendências</p>
+                <strong id="totalPendencias">0</strong>
+            </div>
+
+        </section>
+
+        <section class="card">
+
+            <h2>Conferências realizadas</h2>
+
+            <label for="pesquisa">Pesquisar técnico</label>
+            <input type="search" id="pesquisa"
+                   placeholder="Digite o nome do técnico">
+
+            <div id="listaHistorico"></div>
+
+        </section>
+
+    </main>
+
+    <footer>CheckFiber © 2026</footer>
+
+</body>
+</html>
