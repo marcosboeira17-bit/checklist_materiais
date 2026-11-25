@@ -106,7 +106,7 @@ function verificarLogin() {
         sessionStorage.getItem("operadorLogado") !== "true"
     ) {
         document.body.style.display = "none";
-        window.location.replace("login.html");
+        window.location.replace("index.html");
         return false;
     }
 
@@ -117,7 +117,7 @@ function sair() {
 
     sessionStorage.removeItem("operadorLogado");
 
-    window.location.href = "login.html";
+    window.location.href = "index.html";
 }
 
 // =====================================
@@ -540,7 +540,7 @@ function configurarLink() {
     if (!campo) return;
 
     campo.value = new URL(
-        "index.html",
+        "tecnico.html",
         window.location.href
     ).href;
 }
