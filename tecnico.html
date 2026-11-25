@@ -1,3 +1,64 @@
-<a class="link" href="index.html">
-    Voltar para página inicial
-</a>
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CheckFiber | Conferência</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+
+    <header>
+        <h1>CheckFiber</h1>
+        <p>Controle diário de materiais</p>
+    </header>
+
+    <main class="container">
+
+        <section class="card">
+
+            <h2>Conferência diária</h2>
+
+            <p class="subtitulo">
+                Confira os materiais antes de iniciar o trabalho.
+            </p>
+
+            <div class="data" id="dataAtual"></div>
+
+            <form id="formConferencia">
+
+                <label for="nomeTecnico">
+                    Nome do técnico
+                </label>
+
+                <input type="text"
+                       id="nomeTecnico"
+                       placeholder="Digite seu nome completo"
+                       required>
+
+                <h3>Lista de materiais</h3>
+
+                <div id="listaConferencia"></div>
+
+                <button type="submit" class="btn verde">
+                    Salvar conferência
+                </button>
+
+                <p id="mensagem"
+                   class="mensagem"
+                   role="status"></p>
+
+            </form>
+
+        </section>
+
+    </main>
+
+    <footer>CheckFiber © 2026</footer>
+
+</body>
+</html>
