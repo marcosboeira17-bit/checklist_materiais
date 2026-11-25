@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CheckFiber | Conferência</title>
+    <title>CheckFiber | Login</title>
+
     <link rel="stylesheet" href="css/style.css">
     <script src="js/script.js" defer></script>
 </head>
@@ -15,36 +16,45 @@
         <p>Controle diário de materiais</p>
     </header>
 
-    <main class="container">
+    <main class="container login">
 
         <section class="card">
 
-            <h2>Conferência diária</h2>
-            <p class="subtitulo">Confira os materiais antes de iniciar o trabalho.</p>
+            <h2>Área do operador</h2>
 
-            <div class="data" id="dataAtual"></div>
+            <p class="subtitulo">
+                Entre para gerenciar materiais e conferências.
+            </p>
 
-            <form id="formConferencia">
+            <form id="formLogin">
 
-                <label for="nomeTecnico">Nome do técnico</label>
-                <input type="text" id="nomeTecnico"
-                       placeholder="Digite seu nome completo" required>
+                <label for="usuario">Usuário</label>
 
-                <h3>Lista de materiais</h3>
+                <input type="text"
+                       id="usuario"
+                       placeholder="Digite seu usuário"
+                       autocomplete="username"
+                       required>
 
-                <div id="listaConferencia"></div>
+                <label for="senha">Senha</label>
 
-                <button type="submit" class="btn verde">
-                    Salvar conferência
+                <input type="password"
+                       id="senha"
+                       placeholder="Digite sua senha"
+                       autocomplete="current-password"
+                       required>
+
+                <button type="submit" class="btn">
+                    Entrar
                 </button>
 
-                <p id="mensagem" class="mensagem" role="status"></p>
+                <p id="mensagem"
+                   class="mensagem"
+                   role="status"></p>
 
             </form>
 
         </section>
-
-        <a class="link" href="tecnico.html">Acessar conferência</a>
 
     </main>
 
